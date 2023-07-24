@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="home.css">
+  
+  <link rel="preload" as="image" href="./assets/images/.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-slider-2.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-slider-3.jpg">
+  <title>Home
+</title>
+
+</head>
+
+<body id="top">
+  <div class="preload" data-preaload>
+    <div class="circle"></div>
+  </div>
+ <!--------------------------------------top starts-------------------------->
+
+<div class="topbar">
+  <div class="container">
+
+    <div class="topbar-item" role="contentinfo">
+      <div class="icon">
+        <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+      </div>
+
+      
+      <address class="span">
+        University Of Ottawa, Ottawa, Canada
+      </address>
+    </div>
+
+    <div class="separator"></div>
+
+    <div class="topbar-item item-2" role="contentinfo">
+      <div class="icon">
+        <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+      </div>
+
+      <span class="span">Daily 11:00 am to 1:00 am</span>
+    </div>
+    <div class="topbar-item item-3" role="contentinfo">
+      <div class="icon">
+        <ion-icon name="globe-outline" aria-hidden="true"></ion-icon>
+      </div>
+      <select id="languageSelect" class="language-select" onchange="translatePage(this.value)">
+        <option value="en">English</option>
+        <option value="fr">Français</option>
+      </select>
+    </div>
+
+    <a href="tel:+11234567890" class="topbar-item link" role="contentinfo">
+      <div class="icon">
+        <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+      </div>
+      <span class="span">+1 123 456 7890</span>
+    </a>
+
+    <div class="separator"></div>
+
+    <a href="mailto:booking@foodhaven.com" class="topbar-item link" role="contentinfo">
+      <div class="icon">
+        <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+      </div>
+      <span class="span">booking@foodhaven.com</span>
+    </a>
+
+  </div>
+</div>
+<!--------------------------------------------top ends-------------------------->
+
+   <!-----------------------------------navbar starts ------------------------------------>
+<header class="header" data-header role="navigation">
+  <div class="container">
+
+    <h1>
+      <a href="#" class="gold">FOOD HAVEN</a>
+    </h1>
+
+    <nav class="navbar" data-navbar>
+
+      <button class="close-btn" aria-label="Close Menu" data-nav-toggler>
+        <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+      <h2>
+        <a href="#" class="gold">FOOD HAVEN</a>
+      </h2>
+
+      <ul class="navbar-list">
+
+        <li class="navbar-item">
+      
+          <a href="#" class="navbar-link hover-underline active">
+            <div class="separator"></div>
+           
+            <span class="span" aria-label="Home">Home</span>
+          </a>
+        </li>
+
+        <li class="navbar-item">
+          <a href="menu.html" class="navbar-link hover-underline">
+            <div class="separator"></div>
+            <span class="span" aria-label="Menus">Menus</span>
+          </a>
+        </li>
+
+        <li class="navbar-item">
+          <a href="teamandcontact.html#team" class="navbar-link hover-underline">
+            <div class="separator"></div>
+            <span class="span" aria-label="Our Chefs">Our Chefs</span>
+          </a>
+        </li>
+
+        <li class="navbar-item">
+          <a href="teamandcontact.html#contact" class="navbar-link hover-underline">
+            <div class="separator"></div>
+            <span class="span" aria-label="Contact">Contact</span>
+          </a>
+        </li>
+
+      </ul>
+    </nav>
+    <a href="index.html#reservation" class="btn btn-secondary" aria-label="Find A Table">
+      <span class="text text-1">Find A Table</span>
+      <span class="text text-2" aria-hidden="true">Find A Table</span>
+    </a>
+
+    <button class="nav-open-btn" aria-label="Open Menu" data-nav-toggler>
+      <span class="line line-1"></span>
+      <span class="line line-2"></span>
+      <span class="line line-3"></span>
+    </button>
+
+    <div class="overlay" data-nav-toggler data-overlay></div>
+
+  </div>
+</header>
+<!-----------------------------------------navbar ends---------------------> 
+
+  <!--------------------------------------home starts---------------------------->
+<main>
+  <article>
+    
+    <section class="hero text-center" aria-labelledby="home-heading" id="home">
+     
+      <h2 id="home-heading" class="sr-only">Welcome to Food Haven</h2>
+
+      <ul class="hero-slider" data-hero-slider>
+
+        <li class="slider-item active" data-hero-slider-item>
+          <div class="slider-bg">
+            <img src="./assets/images/plate 3.jpg" width="1880" height="950" alt="Traditional plate" class="img-cover">
+          </div>
+
+          <p class="label-2 section-subtitle slider-reveal">Traditional & Hygiene</p>
+
+          <h1 class="display-1 hero-title slider-reveal">
+            Indulge in Delicious<br>
+            Delights
+          </h1>
+
+          <p class="body-2 hero-text slider-reveal">
+            Unite with your loved ones and experience the sheer delight of delectable cuisine.
+          </p>
+
+          <a href="menu.html" class="btn btn-primary slider-reveal">
+            <span class="text text-1">View Our Menu</span>
+
+            <span class="text text-2" aria-hidden="true">View Our Menu</span>
+          </a>
+
+        </li>
+
+        <li class="slider-item" data-hero-slider-item>
+          <div class="slider-bg">
+            <img src="./assets/images/alal.avif" width="1880" height="950" alt="oriental food" class="img-cover">
+          </div>
+
+          <p class="label-2 section-subtitle slider-reveal">Delightful Experience</p>
+
+          <h1 class="display-1 hero-title slider-reveal">
+            Flavors Inspired by <br>
+            the Seasons
+          </h1>
+
+          <p class="body-2 hero-text slider-reveal">
+            Unite with your loved ones and experience the sheer delight of delectable cuisine.
+          </p>
+
+          <a href="menu.html" class="btn btn-primary slider-reveal">
+            <span class="text text-1">View Our Menu</span>
+
+            <span class="text text-2" aria-hidden="true">View Our Menu</span>
+          </a>
+
+        </li>
+
+        <li class="slider-item" data-hero-slider-item>
+          <div class="slider-bg">
+            <img src="./assets/images/plate2.jpg" width="1880" height="950" alt="lasagna" class="img-cover">
+          </div>
+
+          <p class="label-2 section-subtitle slider-reveal">Amazing & Delicious</p>
+
+          <h1 class="display-1 hero-title slider-reveal">
+            Where every flavor <br>
+            tells a story
+          </h1>
+
+          <p class="body-2 hero-text slider-reveal">
+            Unite with your loved ones and experience the sheer delight of delectable cuisine.
+          </p>
+
+          <a href="menu.html" class="btn btn-primary slider-reveal">
+            <span class="text text-1">View Our Menu</span>
+
+            <span class="text text-2" aria-hidden="true">View Our Menu</span>
+          </a>
+
+        </li>
+
+      </ul>
+
+      <button class="slider-btn prev" aria-label="Slide to previous" data-prev-btn>
+        <ion-icon name="chevron-back"></ion-icon>
+      </button>
+
+      <button class="slider-btn next" aria-label="Slide to next" data-next-btn>
+        <ion-icon name="chevron-forward"></ion-icon>
+      </button>
+
+      <a href="index.html#reservation" class="hero-btn has-after" aria-label="Book a Table">
+        <img src="./assets/images/hero-icon.png" width="48" height="48" alt="Booking icon">
+
+        <span class="label-2 text-center span">Book A Table</span>
+      </a>
+
+    </section>
+
+     <!-------------------------menu starts-------------------------------------->
+<section class="section menu" aria-labelledby="menu-heading" id="menu">
+  <h2 id="menu-heading" class="sr-only">Delicious Menu</h2>
+
+  <div class="container">
+
+    <p class="section-subtitle text-center label-2">Special Selection</p>
+
+    <h2 class="headline-1 section-title text-center">Delicious Menu</h2>
+
+    <ul class="grid-list">
+
+      <li>
+        <div class="menu-card hover:card">
+
+          <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+            <img src="./assets/images/menu-1.png" width="100" height="100" loading="lazy" alt="Greek Salad" class="img-cover">
+          </figure>
+
+          <div>
+            <div class="title-wrapper">
+              <h3 class="title-3">
+                <a href="#" class="card-title">Greek Salad</a>
+              </h3>
+              <span class="badge label-1">Seasonal</span>
+              <span class="span title-2">$25.50</span>
+            </div>
+            <p class="card-text label-1">
+              Tomatoes, green bell pepper, sliced cucumber onion, olives, and feta cheese.
+            </p>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div class="menu-card hover:card">
+
+          <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+            <img src="./assets/images/menu-2.png" width="100" height="100" loading="lazy" alt="Lasagne" class="img-cover">
+          </figure>
+
+          <div>
+            <div class="title-wrapper">
+              <h3 class="title-3">
+                <a href="#" class="card-title">Lasagne</a>
+              </h3>
+              <span class="span title-2">$40.00</span>
+            </div>
+            <p class="card-text label-1">
+              Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices.
+            </p>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div class="menu-card hover:card">
+
+          <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+            <img src="./assets/images/menu-3.png" width="100" height="100" loading="lazy" alt="Butternut Pumpkin" class="img-cover">
+          </figure>
+
+          <div>
+            <div class="title-wrapper">
+              <h3 class="title-3">
+                <a href="#" class="card-title">Butternut Pumpkin</a>
+              </h3>
+              <span class="span title-2">$10.00</span>
+            </div>
+            <p class="card-text label-1">
+              Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices.
+            </p>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div class="menu-card hover:card">
+
+          <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+            <img src="./assets/images/menu-4.png" width="100" height="100" loading="lazy" alt="Tokusen Wagyu" class="img-cover">
+          </figure>
+
+          <div>
+            <div class="title-wrapper">
+              <h3 class="title-3">
+                <a href="#" class="card-title">Tokusen Wagyu</a>
+              </h3>
+              <span class="badge label-1">New</span>
+              <span class="span title-2">$39.00</span>
+            </div>
+            <p class="card-text label-1">
+              Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices.
+            </p>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div class="menu-card hover:card">
+
+          <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+            <img src="./assets/images/menu-5.png" width="100" height="100" loading="lazy" alt="Olivas Rellenas" class="img-cover">
+          </figure>
+
+          <div>
+            <div class="title-wrapper">
+              <h3 class="title-3">
+                <a href="#" class="card-title">Olivas Rellenas</a>
+              </h3>
+              <span class="span title-2">$25.00</span>
+            </div>
+            <p class="card-text label-1">
+              Avocados with crab meat, red onion, crab salad stuffed red bell pepper and green bell pepper.
+            </p>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div class="menu-card hover:card">
+
+          <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+            <img src="./assets/images/menu-6.png" width="100" height="100" loading="lazy" alt="Opu Fish" class="img-cover">
+          </figure>
+
+          <div>
+            <div class="title-wrapper">
+              <h3 class="title-3">
+                <a href="#" class="card-title">Opu Fish</a>
+              </h3>
+              <span class="span title-2">$49.00</span>
+            </div>
+            <p class="card-text label-1">
+              Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices.
+            </p>
+          </div>
+        </div>
+      </li>
+
+    </ul>
+
+    <p class="menu-text text-center">
+      Daily from <span class="span">11:00 am</span> to <span class="span">1:00 am</span>
+    </p>
+
+    <a href="menu.html" class="btn btn-primary">
+      <span class="text text-1">View All Menu</span>
+      <span class="text text-2" aria-hidden="true">View All Menu</span>
+    </a>
+
+  </div>
+</section>
+<!-------------------------------menu ends---------------------------------------------->
+
+<!-------------------------------testimonial----------------------------------------------->
+<section class="section testi text-center has-bg-image" style="background-image:url('assets/images/testimonial-bg.jpg')" aria-label="testimonials">
+  <div class="container">
+
+    <div class="quote">”</div>
+
+    <p class="headline-2 testi-text" id="testimonial-text">
+      I wanted to thank you for inviting me down for that amazing dinner the other night. <br>
+      That restaurant you took me to was an absolute gem, and the food was simply out of this world..
+    </p>
+
+    <div class="wrapper">
+      <div class="separator"></div>
+      <div class="separator"></div>
+      <div class="separator"></div>
+    </div>
+
+    <div class="profile">
+      <img src="./assets/images/profile.jpg" width="100" height="100" loading="lazy" alt="Profile Picture of Abdou" class="img" aria-labelledby="profile-name">
+      <p class="label-2 profile-name" id="profile-name">Abdou bouayad</p>
+    </div>
+
+  </div>
+</section>
+<!-------------------------------testimonial ends ----------------------------------------------->
+
+
+      <!-------------------------reservation--------------------------------------------->
+
+      <section class="reservation" id="reservation">
+        <div class="container">
+
+          <div class="form reservation-form bg-black-10">
+
+            <form action="" class="form-left" id="reservationForm">
+
+              <h2 class="headline-1 text-center">Online Reservation</h2>
+
+              <p class="form-text text-center">
+                Booking request <a href="tel:+88123123456" class="link">+1 123 456 7890</a>
+                or fill out the order form
+              </p>
+
+              <div class="input-wrapper">
+                <input type="text" name="name" placeholder="Your Name" autocomplete="off" class="input-field">
+
+                <input type="tel" name="phone" placeholder="Phone Number" autocomplete="off" class="input-field" onkeydown="restrictToNumbers(event)">
+              </div>
+
+              <div class="input-wrapper">
+
+                <div class="icon-wrapper">
+                  <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+                  <select name="person" class="input-field">
+                    <option value="1-person">1 Person</option>
+                    <option value="2-person">2 Person</option>
+                    <option value="3-person">3 Person</option>
+                    <option value="4-person">4 Person</option>
+                    <option value="5-person">5 Person</option>
+                    <option value="6-person">6 Person</option>
+                    <option value="7-person">7 Person</option>
+                    <option value="8-person">8 Person</option>
+                  </select>
+
+                  <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                </div>
+
+                <div class="icon-wrapper">
+                  <ion-icon name="calendar-clear-outline" aria-hidden="true"></ion-icon>
+
+                  <input type="date" name="reservation-date" class="input-field">
+
+                  <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                </div>
+
+                <div class="icon-wrapper">
+                  <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                  <select name="person" class="input-field">
+                    <option value="011:00am">11 : 00 am</option>
+                    <option value="012:00am">12 : 00 am</option>
+                    <option value="01:00pm">01 : 00 pm</option>
+                    <option value="02:00pm">02 : 00 pm</option>
+                    <option value="03:00pm">03 : 00 pm</option>
+                    <option value="09:00pm">08 : 00 pm</option>
+                    <option value="09:00pm">09 : 00 pm</option>
+                    <option value="10:00pm">10 : 00 pm</option>
+                    <option value="10:00pm">11 : 00 pm</option>
+                    <option value="10:00pm">12 : 00 pm</option>
+                  </select>
+
+                  <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                </div>
+
+              </div>
+
+              <textarea name="message" placeholder="Message" autocomplete="off" class="input-field"></textarea>
+
+              <button type="button" id="res" class="btn btn-secondary">
+                <span class="text text-1">Book A Table</span>
+
+                <span class="text text-2" aria-hidden="true">Book A Table</span>
+              </button>
+
+            </form>
+            <div class="form-right text-center" style="background-image: url('assets/images/footer-form-bg.png')">
+
+                <h2 class="headline-1 text-center">Contact Us</h2>
+  
+                <p class="contact-label">Booking Request</p>
+  
+                <a href="tel:+1 123 456 7890" class="body-1 contact-number hover-underline">+1 123 456 7890</a>
+  
+                <div class="separator"></div>
+  
+                <p class="contact-label">Location</p>
+  
+                <address class="body-4">
+                    University Of Ottawa, Ottawa, Canada
+                </address>
+  
+                <p class="contact-label">Lunch Time</p>
+  
+                <p class="body-4">
+                  Monday to Sunday <br>
+                  11:00 am - 3:00pm
+                </p>
+  
+                <p class="contact-label">Dinner Time</p>
+  
+                <p class="body-4">
+                  Monday to Sunday <br>
+                  8:00 pm - 1:00am
+                </p>
+  
+              </div>
+  
+          </div>
+        </div>
+      </section>
+    </article>
+  </main>
+  <a href="#top" class="back-top-btn active" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+  <script src="home.js"></script>ù
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement(
+        { pageLanguage: 'en', includedLanguages: 'fr,en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE },
+        'google_translate_element'
+      );
+    }
+  </script>
+  <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+  <script type="text/javascript">
+    function setCookie(name, value, days) {
+      var expires = "";
+      if (days) {
+        var date = new Date();
+        date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
+        expires = "; expires=" + date.toUTCString();
+      }
+      document.cookie = name + "=" + (value || "") + expires + "; path=/";
+    }
+
+    function getCookie(name) {
+      var nameEQ = name + "=";
+      var ca = document.cookie.split(';');
+      for (var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+      }
+      return null;
+    }
+
+    function translatePage(lang) {
+      var targetLanguage = lang;
+      setCookie('selected_language', targetLanguage, 365);
+      if (google.translate.TranslateElement) {
+        var translateElement = new google.translate.TranslateElement({ pageLanguage: targetLanguage });
+        translateElement.showBanner(false); 
+      }
+    }
+
+    function initializeLanguage() {
+      var selectedLanguage = getCookie('selected_language') || 'en';
+      translatePage(selectedLanguage);
+    }
+  </script>
+
+  <script type="text/javascript">
+    initializeLanguage();
+  </script>
+  
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

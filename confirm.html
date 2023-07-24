@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="payment.css">
+  <link rel="preload" as="image" href="./assets/images/.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-slider-2.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-slider-3.jpg">
+  <title>Confirmation
+</title>
+
+</head>
+
+<body id="top">
+  <div class="preload" data-preaload>
+    <div class="circle"></div>
+  </div>
+  <!--------------------------------------top starts-------------------------->
+
+  <div class="topbar">
+    <div class="container">
+
+      <address class="topbar-item">
+        <div class="icon">
+          <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">
+          University Of Ottawa, Ottawa, Canada
+        </span>
+      </address>
+
+      <div class="separator"></div>
+
+      <div class="topbar-item item-2">
+        <div class="icon">
+          <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">Daily 11:00 am to 1:00 am</span>
+      </div>
+
+      <a href="tel:+11234567890" class="topbar-item link">
+        <div class="icon">
+          <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">+1 123 456 7890</span>
+      </a>
+
+      <div class="separator"></div>
+
+      <a href="mailto:booking@foodhaven.com" class="topbar-item link">
+        <div class="icon">
+          <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">booking@foodhaven.com</span>
+      </a>
+
+    </div>
+  </div>
+  <!--------------------------------------------top ends-------------------------->
+   <!-----------------------------------navbar starts ------------------------------------>
+   <header class="header" data-header>
+    <div class="container">
+
+      <a href="index.html" class="gold">FOOD HAVEN
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <button class="close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <a href="index.html" class="gold">
+           FOOD HAVEN</a>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="index.html" class="navbar-link hover-underline active">
+              <div class="separator"></div>
+
+              <span class="span">Home</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="menu.html" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Menus</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="teamandcontact.html#team" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Our Chefs</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="teamandcontact.html#contact" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Contact</span>
+            </a>
+          </li>
+
+        </ul>
+
+        
+
+      </nav>
+
+      <a href="index.html#reservation" class="btn btn-secondary">
+        <span class="text text-1">Find A Table</span>
+
+        <span class="text text-2" aria-hidden="true">Find A Table</span>
+      </a>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+
+  
+   <!-----------------------------------------navbar ends---------------------> 
+
+      <!-------------------------reservation--------------------------------------------->
+
+      <section class="reservation" id="reservation">
+        <div class="container">
+          <div class="form reservation-form bg-black-10">
+            <form id="paymentForm" class="form-left">
+              <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar text-bg-warning" style="width: 66%">66%</div>
+              </div>
+                <h2 class="headline-1 text-center">Confirm Booking</h2>
+                <p class="form-text text-center">
+                  Do you want to confirm your booking and proceed with the payment?
+                </p>
+      
+                <div class="button-wrapper">
+                  <button type="button" id="backButton" class="btn btn-secondary">
+                    <span class="text text-1">No</span>
+                    <span class="text text-2" aria-hidden="true">No</span>
+                  </button>
+      
+                  <button type="button" id="confirmButton" class="btn btn-primary">
+                    <span class="text text-1">Yes</span>
+                    <span class="text text-2" aria-hidden="true">Yes</span>
+                  </button>
+                </div>
+              </form>
+      
+            <div class="form-right text-center" style="background-image: url('assets/images/footer-form-bg.png')">
+              <h2 class="headline-1 text-center">Contact Us</h2>
+      
+              <p class="contact-label">Payment Request</p>
+      
+              <a href="tel:+1 123 456 7890" class="body-1 contact-number hover-underline">+1 123 456 7890</a>
+      
+              <div class="separator"></div>
+      
+              <p class="contact-label">Location</p>
+      
+              <address class="body-4">
+                University Of Ottawa, Ottawa, Canada
+              </address>
+      
+              <p class="contact-label">Lunch Time</p>
+      
+              <p class="body-4">
+                Monday to Sunday <br>
+                11:00 am - 3:00 pm
+              </p>
+      
+              <p class="contact-label">Dinner Time</p>
+      
+              <p class="body-4">
+                Monday to Sunday <br>
+                8:00 pm - 1:00 am
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      
+    </article>
+  </main>
+  <script src="home.js"></script>
+  <script src="confirm.js"></script>
+  
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
