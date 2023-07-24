@@ -131,8 +131,30 @@ window.addEventListener("mousemove", function (event) {
 });
 const res = document.getElementById("res");
 res.addEventListener("click", function () {
+  
+  const inputFields = document.querySelectorAll("#reservationForm input[required], #reservationForm textarea[required]");
+
+  // Assume all fields are filled initially
+  let allFieldsFilled = true;
+
+  // Check if any required field is empty
+  for (const field of inputFields) {
+    if (!field.value.trim()) {
+      allFieldsFilled = false;
+      break;
+    }
+  }
+
+  // If any required field is empty, show an alert and prevent redirection
+  if (!allFieldsFilled) {
+    alert("Please fill in all the required fields before proceeding.");
+    return;
+  }
+
+  // If all required fields are filled, redirect to "payment.html"
   window.location.href = "payment.html";
 });
+
 
 function translateContent(selectedLanguage) {
   const elementsToTranslate = document.querySelectorAll("[data-translate]");

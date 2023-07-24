@@ -446,9 +446,9 @@
               </p>
 
               <div class="input-wrapper">
-                <input type="text" name="name" placeholder="Your Name" autocomplete="off" class="input-field">
+                <input type="text" name="name" placeholder="Your Name" autocomplete="off" class="input-field" required>
 
-                <input type="tel" name="phone" placeholder="Phone Number" autocomplete="off" class="input-field" onkeydown="restrictToNumbers(event)">
+                <input type="tel" name="phone" placeholder="Phone Number" autocomplete="off" class="input-field" onkeydown="restrictToNumbers(event)" required>
               </div>
 
               <div class="input-wrapper">
@@ -473,7 +473,7 @@
                 <div class="icon-wrapper">
                   <ion-icon name="calendar-clear-outline" aria-hidden="true"></ion-icon>
 
-                  <input type="date" name="reservation-date" class="input-field">
+                  <input type="date" name="reservation-date" class="input-field" required>
 
                   <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
                 </div>
